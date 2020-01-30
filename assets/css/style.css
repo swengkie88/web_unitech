@@ -18,9 +18,10 @@ h1, h2, h3, h4, h5, h6{
 
 .navbar {
     background: #fff;
-    padding: .5rem 5rem;
+    /* padding: .5rem 5rem; */
     box-shadow: 0px 3px 6px #0202024f;
-    z-index: 2;
+    z-index: 5;
+    width: 100%;
 }
 
 .navbar-brand img{
@@ -33,21 +34,28 @@ h1, h2, h3, h4, h5, h6{
     height: 532px;
 }
 
-.carousel-text{
+.carousel-jumbotron{
     background: linear-gradient(45deg, #062161, #cddc396b);
     color: #fff;
-    display: block;
     position: absolute;
-    padding: 12% 0;
     z-index: 1;
     width: 100%;
     height: 100%;
     text-align: center;
 }
 
+.carousel-text{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
 .carousel-text h1{
     text-shadow: 0 3px 6px #f9a825;
-    font-size: 3.5rem!important;
+    font-size: 5.5em;
     margin: 20px auto;
 }
 .carousel-text p {
@@ -61,6 +69,23 @@ h1, h2, h3, h4, h5, h6{
     border-radius: 50%;
     margin-right: 6px;
     margin-left: 6px;
+}
+@media(max-width: 540px){
+    .carousel-text{
+        padding: 0 60px;
+    }
+}
+@media(max-width: 768px){
+    .carousel-text p{
+        width: auto;
+    }
+    .carousel-text h1{
+        font-size: 3.5em;
+    }
+    .carousel-item img{
+        height: 100%;
+        width: auto!important;
+    }
 }
 
 .section-header{
@@ -85,6 +110,15 @@ h1, h2, h3, h4, h5, h6{
     width: 650px;
 }
 
+@media(max-width: 540px){
+    .section-index{
+        padding: 40px 20px!important;
+    }
+    .section-index p{
+        width: auto;
+    }
+}
+
 #section-about,
 #section-dokumentasi{
     padding: 80px  0px;
@@ -105,24 +139,43 @@ h1, h2, h3, h4, h5, h6{
 .card-gallery{
     background: #333;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
     display: block;
     height: 200px;
     margin: 10px auto;
     width: 300px;
+    position: relative;
+    overflow: hidden;
 }
 
 .card-gallery img{
     height: auto;
     width: 100%;
+    transition: 0.3s all;
+}
+
+.card-gallery:hover img{
+    transform: scale(1.25);
+}
+
+
+
+@media(max-width: 350px){
+    .card-gallery{
+        
+        height: 150px;
+        width: auto;
+    }
+    .card-gallery img{
+        transform: scale(1.2);
+        height: 100%;
+        width: auto;
+    }
 }
 
 /* Timeline lomba */
-.num-timeline{
-    line-height: 60px;
-    height: 60px;
-}
-
 .list-timeline{
+    font-size: 11pt;
     margin: 15px 0px;
 }
 
@@ -133,6 +186,7 @@ h1, h2, h3, h4, h5, h6{
     display: inline-block;
     height: 60px;
     width: 60px;
+    line-height: 60px;
     text-align: center;
     font-size: 1.5em;
 }
@@ -147,7 +201,21 @@ h1, h2, h3, h4, h5, h6{
     padding: 0 10px;
     display: inline-block;
     vertical-align: middle;
-height: 60px;
+    height: 60px;
+}
+
+@media(max-width: 420px){
+    .date-timeline,
+    .content-timeline{
+        height: 40px;
+        padding: 0 5px;
+    }
+    .num-timeline{
+        font-size: 1.15em;
+        height: 40px;
+        line-height: 40px;
+        width: 40px;
+    }
 }
 
 /* Ketentuan lomba start */

@@ -321,4 +321,31 @@ footer{
     color: #1f1f1f;
     padding: 40px 20px;
 }
+
+#footer-media ul{
+    padding-inline-start: 0;
+}
+#footer-media ul li{
+    height: 32px;
+    list-style: none;
+    margin: 10px 0px;
+}
+#footer-media ul li a i{
+    background: #444;
+    border-radius: 50%;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    width: 32px;
+    margin: 0 10px;
+    text-align: center;
+}
+#footer-media ul li a{
+    font-size: 12pt;
+    transition: 0.2s all;
+}
+#footer-media ul li a:hover{
+    color: #062161;
+    text-decoration: none;
+}
 /* Footer stop */

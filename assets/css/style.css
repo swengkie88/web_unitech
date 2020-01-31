@@ -36,6 +36,12 @@ h1, h2, h3, h4, h5, h6{
     color: #062161;
 }
 
+@media(max-width: 540px){
+    .navbar-brand img{
+        height: 64px;
+    }
+}
+
 .carousel.slide,
 .carousel-inner,
 .carousel-item{
@@ -148,6 +154,16 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
+@media(max-width: 768px){
+    .section-index p{
+        width: auto;
+    }
+    #section-about,
+    #section-dokumentasi{
+        padding: 40px 20px!important;
+    }
+}
+
 .card-gallery{
     background: #333;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
@@ -202,6 +218,9 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
     font-size: 1.5em;
 }
+.wrap-content-timeline{
+    display: inline-block;
+}
 .date-timeline{
     border-right: 1px solid #ddd;
     height: 60px;
@@ -215,7 +234,11 @@ h1, h2, h3, h4, h5, h6{
     vertical-align: middle;
     height: 60px;
 }
-
+@media(max-width: 376px){
+    .wrap-content-timeline{
+        margin: 10px 0px;
+    }
+}
 @media(max-width: 420px){
     .date-timeline,
     .content-timeline{
@@ -311,6 +334,12 @@ h1, h2, h3, h4, h5, h6{
     }
     #map-wrapper{
         margin: 20px 0px;
+    }
+}
+
+@media(max-width: 992px){
+    #kontak{
+        height: auto;
     }
 }
 /* Kontak stop */

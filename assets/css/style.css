@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6{
     .section-index p{
         width: auto;
     }
-    .section-dokumentasi{
+    #section-dokumentasi{
         padding: 0;
     }
 }
@@ -317,7 +317,8 @@ h1, h2, h3, h4, h5, h6{
 
 /* Footer start */
 footer{
-    background: #d8d8d8;
+    border-top: 4px solid #888;
+    background: #ffffff;
     color: #1f1f1f;
     padding: 40px 20px;
 }
@@ -347,5 +348,10 @@ footer{
 #footer-media ul li a:hover{
     color: #062161;
     text-decoration: none;
+}
+#copy{
+    color: #8c8c8c;
+    font-size: 10pt;
+    padding: 10px 0px;
 }
 /* Footer stop */

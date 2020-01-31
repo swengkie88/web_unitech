@@ -150,6 +150,10 @@ h1, h2, h3, h4, h5, h6{
     width: 100px;
 }
 
+.section-index{
+    padding: 40px 20px;
+}
+
 .section-index h2{
     text-shadow: 3px 0px 0px #ffaf2e;
     font-size: 3rem;
@@ -162,13 +166,8 @@ h1, h2, h3, h4, h5, h6{
     width: 650px;
 }
 
-#section-about,
-#section-timeline,
 #section-dokumentasi{
-    padding: 80px  0px;
-}
-
-#section-dokumentasi{
+    background: #ececec;
     text-align: center;
 }
 
@@ -181,24 +180,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 @media(max-width: 540px){
-    .section-index{
-        padding: 40px 20px!important;
-    }
     .section-index p{
         width: auto;
-    }
-    #section-dokumentasi{
-        padding: 0;
     }
 }
 
 @media(max-width: 768px){
     .section-index p{
         width: auto;
-    }
-    #section-about,
-    #section-dokumentasi{
-        padding: 40px 20px!important;
     }
 }
 
@@ -353,12 +342,11 @@ h1, h2, h3, h4, h5, h6{
     background: #2196F3;
     border-radius: 4px;
     color: #fff;
-    display: block;
-    width: 280px;
+    display: inline-block;
     height: 35px;
     position: relative;
     line-height: 35px;
-    padding-left: 55px;
+    padding: 0px 20px 0px 55px;
     overflow: hidden;
     transition: 0.3s all;
 }

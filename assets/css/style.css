@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6{
     text-shadow: 5px 0px #f9a825;
     font-size: 5.5em;
     margin: 20px auto;
+    transition: 0.3s all;
 }
 .carousel-text p {
     width: 500px;
@@ -97,9 +98,32 @@ h1, h2, h3, h4, h5, h6{
     margin-right: 6px;
     margin-left: 6px;
 }
+
+.carousel-control-next, .carousel-control-prev{
+    opacity: 1;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i{
+    background: #cddc39;
+    color: #383d41;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 2px #0000001a;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    transition: 0.3s all;
+}
+
 @media(max-width: 540px){
     .carousel-text{
         padding: 0 60px;
+    }
+    .carousel-control-prev i,
+    .carousel-control-next i{
+        line-height: 30px;
+        height: 36px;
+        width: 36px;
     }
 }
 @media(max-width: 768px){
@@ -139,6 +163,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #section-about,
+#section-timeline,
 #section-dokumentasi{
     padding: 80px  0px;
 }
@@ -410,3 +435,41 @@ footer{
     padding: 10px 0px;
 }
 /* Footer stop */
+
+/* Button back to top */
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }

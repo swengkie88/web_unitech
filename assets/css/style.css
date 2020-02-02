@@ -238,32 +238,31 @@ h1, h2, h3, h4, h5, h6{
     background: orangered;
     border-radius: 50%;
     color: #fff;
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    line-height: 50px;
     text-align: center;
     font-size: 1.5em;
 }
 .wrap-content-timeline{
-    border-bottom: 2px dashed #ddd;
-    display: inline-block;
+    text-align: center;
+    display: block;
     padding: 5px 0px;
 }
 .date-timeline{
-    border-right: 1px solid #ddd;
-    height: 60px;
     padding: 0px 10px;
-    display: inline-block;
+    display: block;
     vertical-align: middle;
+    font-weight: bold;
 }
 .content-timeline{
     padding: 0 10px;
-    display: inline-block;
+    display: block;
     vertical-align: middle;
-    height: 60px;
 }
-@media(max-width: 376px){
+/* @media(max-width: 376px){
     .wrap-content-timeline{
         padding: 13px 0px;
     }
@@ -271,16 +270,24 @@ h1, h2, h3, h4, h5, h6{
 @media(max-width: 420px){
     .date-timeline,
     .content-timeline{
+        display: block;
+        text-align: center;
         height: 40px;
         padding: 0 5px;
     }
+    .wrap-content-timeline{
+        margin: 0 auto;
+        display: block;
+    }
     .num-timeline{
+        margin: 0 auto;
+        display: block;
         font-size: 1.15em;
         height: 40px;
         line-height: 40px;
         width: 40px;
     }
-}
+} */
 
 /* Ketentuan lomba start */
 #ketentuan{
